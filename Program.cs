@@ -23,6 +23,7 @@ class Player
                 int entityId = int.Parse(inputs[0]);
                 string entityType = inputs[1];
 
+
                 int x = int.Parse(inputs[2]);
                 int y = int.Parse(inputs[3]);
 
