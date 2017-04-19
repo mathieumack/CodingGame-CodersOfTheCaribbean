@@ -8,6 +8,13 @@ namespace CodingGameCodeSample
 {
     class Program
     {
+        class Position
+        {
+            public int X { get; set; }
+
+            public int Y { get; set; }
+        }
+
         static void Main(string[] args)
         {
             int cols = 22;
@@ -23,8 +30,11 @@ namespace CodingGameCodeSample
                     string[] inputs = Console.ReadLine().Split(' ');
                     int entityId = int.Parse(inputs[0]);
                     string entityType = inputs[1];
-                    int x = int.Parse(inputs[2]);
-                    int y = int.Parse(inputs[3]);
+                    var pos = new Position()
+                    {
+                        X = int.Parse(inputs[2]),
+                        Y = int.Parse(inputs[3])
+                    };
                     int arg1 = int.Parse(inputs[4]);
                     int arg2 = int.Parse(inputs[5]);
                     int arg3 = int.Parse(inputs[6]);
